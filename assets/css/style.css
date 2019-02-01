@@ -1,0 +1,40 @@
+.wrapper {
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-size: 100%;
+}
+
+.jumbotron h1 {
+    font-family: Times;
+    text-align: center;
+    font-weight: 800;
+    margin-bottom: 0;
+}
+
+.jumbotron p {
+    font-family: Times;
+    font-style: italic;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+h5 {
+    font-weight: bold;
+}
+
+label {
+    font-weight: bold;
+}
+
+.card {
+    margin-bottom: 50px;
+}
+
+.container {
+    opacity: .9;
+}
+
+#table1 {
+    background-color: aliceblue;
+}
