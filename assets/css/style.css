@@ -1,40 +1,42 @@
+/* body {
+    font-family: 'Major Mono Display', monospace;
+} */
 .wrapper {
     background-repeat: no-repeat;
     background-position: fixed;
     background-size: 100%;
 }
 
-
 .jumbotron {
     padding: 1rem 1rem;
     margin-bottom: 1rem;
     background-color: #e9ecef;
     border-radius: 0.3rem;
-  }
+}
   
-  /* @media (min-width: 576px) {
-    .jumbotron {
-      padding: 4rem 2rem;
-    }
-  } */
-
 .jumbotron h1 {
     font-family: Times;
     text-align: center;
-    font-weight: 800;
+    font-weight: 600;
     margin-bottom: 0;
+    font-family: 'Nobile', sans-serif;
 }
 
 .jumbotron p {
     font-family: Times;
-    font-style: italic;
+    /* font-style: italic; */
     text-align: center;
-    font-size: 40px;
-    font-weight: 600;
+    font-size: 30px;
+    font-weight: 400;
+    font-family: 'Nobile', sans-serif;
 }
 
+.navbar{
+    background-color:  #ffffff;
+}
 h5 {
-    font-weight: bold;
+    /* font-weight: bold; */
+    font-family: 'Nobile', sans-serif;
 }
 
 label {

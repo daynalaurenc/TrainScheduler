@@ -32,7 +32,7 @@ $("#add-train").on('click', function(event){
 
  
 
-  console.log("clicked")
+  console.log("clicked");
 
   $("#input-name").val('');
   $("#input-destination").val('');
@@ -49,11 +49,6 @@ $("#add-train").on('click', function(event){
     minutesAway: minutesAway,
 
   })
-
-  // $("#input-name").val('');
-  // $("#input-destination").val('');
-  // $("#input-start").val('');
-  // $("#input-frequency").val('');
 
 })
 
