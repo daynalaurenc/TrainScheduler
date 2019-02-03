@@ -4,6 +4,20 @@
     background-size: 100%;
 }
 
+
+.jumbotron {
+    padding: 1rem 1rem;
+    margin-bottom: 1rem;
+    background-color: #e9ecef;
+    border-radius: 0.3rem;
+  }
+  
+  /* @media (min-width: 576px) {
+    .jumbotron {
+      padding: 4rem 2rem;
+    }
+  } */
+
 .jumbotron h1 {
     font-family: Times;
     text-align: center;
@@ -27,14 +41,27 @@ label {
     font-weight: bold;
 }
 
-.card {
-    margin-bottom: 50px;
-}
-
 .container {
     opacity: .9;
 }
 
-#table1 {
-    background-color: aliceblue;
+
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #343a40; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #343a40; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
 }

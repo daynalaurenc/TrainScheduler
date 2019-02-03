@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Goodfellows Express</title>
+    <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
     <!-- Bootstrap links -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -12,10 +14,11 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
    <!-- Connect to style.css -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
     <!-- Connect to app.js -->
     <script type="text/javascript" src="assets/javascript/app.js"></script>
-   <!-- Firebase link -->
-   <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase.js"></script>
+    
+ 
 
 </head>
 <body>
@@ -28,15 +31,14 @@
         <section class="main-section">
     
     <div class="jumbotron">
-        <h1 class="display-4">Goodfellows Express</h1>
+        <h1 class="display-4">UberX Bullet</h1>
         <p class="lead">Always On Track</p>
       </div>
-
+<div class="row">
+<div class="col-xs-12 col-sm-9">
     <div class="card" id="table1">
-        <h5 class="card-header">Current Train Schedule</h5>
+        <h5 class="card-header badge-dark">Current Train Schedule</h5>
         <div class="card-body">
-            <div class="row">
-            <div class="col-xs-12 col-sm-12">
             <div class="panel-body">
                 <table class="table table-hover" id="train-table">
                     <thead>
@@ -48,41 +50,43 @@
                     <th class="text-center">Minutes Away</th>
                   <!-- </tr> -->
                     </thead>
-                    <tbody id="train-table-rows">
+                    <tbody class="text-center" id="train-table-rows">
                     </tbody>
                 </table>
             </div>
             </div>
-            </div>
+            
         </div>
     </div>
-
+    <div class="col-xs-12 col-sm-3">
     <div class="card">
-        <h5 class="card-header">Add Train</h5>
+        <h5 class="card-header badge-dark">Quick Trip</h5>
         <div class="card-body">
           
-      <form>
+      <form> 
         <div class="form-group">
           <label for="exampleFormControlInput1">Train Name</label>
-          <input class="form-control" type="text">
+          <input class="form-control" id="input-name" type="text">
         </div>
         <div class="form-group">
             <label for="exampleFormControlInput2">Destination</label>
-            <input class="form-control" type="text">
+            <input class="form-control" id="input-destination" type="text">
         </div>
         <div class="form-group">
-            <label for="exampleFormControlInput3">First Train Time (HH:mm - military time)</label>
-            <input class="form-control" type="text">
+            <label for="exampleFormControlInput3">First Train Time<br> (HH:mm - military time)</label>
+            <input class="form-control" id="input-start" type="text">
         </div>
         <div class="form-group">
             <label for="exampleFormControlInput4">Frequency (min)</label>
-            <input class="form-control" type="text">
+            <input class="form-control" id="input-frequency" type="text">
         </div>
-        <button type="button" class="btn btn-dark">Add Train</button>
+        <button type="button" id="add-train" class="btn btn-dark">Add Train</button>
     
       </form>
         </div>
     </div>
+</div>
+</div>
 
 </section>
 </div>
@@ -90,5 +94,6 @@
 </div>
 </div>
 </div>
+<!-- <script type="text/javascript" src="assets/javascript/app.js"></script> -->
 </body>
 </html>
