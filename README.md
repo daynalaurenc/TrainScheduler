@@ -5,7 +5,7 @@ Front-end train schedule application
 [Train Schedule Link](https://daynalaurenc.github.io/TrainScheduler/ "Train-Schedule Link")
 
 ## Description
-The application accepts user input to add new train name, start time, and frequency to its schedule. The data is displayed in a repeating table with Next Arrival based on the current time and frequency of train stops. Train info is stored in Firebase for data persistence, utilizing Realtime Database . 
+The application accepts user input to add new train name, start time, and frequency to its schedule. The correlating data is displayed in a repeating table + Next Arrival, computed based on the current time and frequency of train stops. Train info is stored in Firebase for data persistence, utilizing Realtime Database. 
 
 ## Sample View
 
